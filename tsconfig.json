@@ -1,0 +1,17 @@
+{
+  "extends": "./node_modules/@mlz/lint/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "src": ["./src/*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "_test_/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}

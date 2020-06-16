@@ -1,0 +1,48 @@
+{
+  "name": "doraemon",
+  "version": "0.0.1",
+  "description": "项目常用工具函数集合，释放你的Ctrl C、Ctrl V键",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juicecube/doraemon.git"
+  },
+  "keywords": [
+    "codemao",
+    "utils",
+    "typescript"
+  ],
+  "author": "juicecube/urnotzane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juicecube/doraemon/issues"
+  },
+  "homepage": "https://github.com/juicecube/doraemon#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@mlz/lint": "^1.1.10",
+    "eslint": "^7.2.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.10",
+    "rollup": "^2.16.1",
+    "ts-lint": "^4.5.1",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5"
+  }
+}
