@@ -4,7 +4,7 @@
   "description": "项目常用工具函数集合，释放你的Ctrl C、Ctrl V键",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -32,15 +32,23 @@
       "eslint"
     ]
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@mlz/lint": "^1.1.10",
+    "@types/jest": "^26.0.0",
     "eslint": "^7.2.0",
     "husky": "^4.2.5",
+    "jest": "^26.0.1",
     "lint-staged": "^10.2.10",
     "rollup": "^2.16.1",
+    "ts-jest": "^26.1.0",
     "ts-lint": "^4.5.1",
     "ts-loader": "^7.0.5",
     "typescript": "^3.9.5"

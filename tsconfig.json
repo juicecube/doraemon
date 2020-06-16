@@ -8,7 +8,7 @@
   },
   "include": [
     "src/**/*",
-    "_test_/**/*"
+    "test/**/*"
   ],
   "exclude": [
     "node_modules",

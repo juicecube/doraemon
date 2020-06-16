@@ -1,1 +1,3 @@
 node_modules
+# jest报表
+coverage
