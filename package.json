@@ -1,10 +1,10 @@
 {
-  "name": "doraemon",
+  "name": "@mlz/doraemon",
   "version": "0.0.1",
   "description": "项目常用工具函数集合，释放你的Ctrl C、Ctrl V键",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --clearCache && jest --detectOpenHandles"
   },
   "repository": {
     "type": "git",
