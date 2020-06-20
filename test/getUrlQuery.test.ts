@@ -1,4 +1,4 @@
-import { getUrlQuery } from '../src/get-url-query';
+import { getUrlQuery } from '../src/getUrlQuery';
 
 describe('getUrlQuery', () => {
   it('null', () => {
