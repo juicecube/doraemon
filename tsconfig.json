@@ -16,20 +16,15 @@
     "emitDecoratorMetadata": true,
     "declarationDir": "dist/types",
     "outDir": "dist/lib",
-    "typeRoots": [
-      "./src/types/global.d.ts"
-    ],
     "noImplicitAny": false,
     "strictNullChecks": false
   },
   "include": [
-    "src/**/*",
-    "src/types/global.d.ts"
+    "./src"
   ],
   "exclude": [
-    "node_modules",
-    "dist",
-    "test"
-  ],
-  "files": ["./src/types/global.d.ts"]
+    "./node_modules",
+    "./dist",
+    "./test"
+  ]
 }

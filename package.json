@@ -2,20 +2,22 @@
   "name": "@mlz/doraemon",
   "version": "0.0.1",
   "description": "项目常用工具函数集合，释放你的Ctrl C、Ctrl V",
-  "main": "dist/bundle.cjs.js",
-  "module": "dist/bundle.esm.js",
-  "browser": "dist/bundle.umd.js",
+  "main": "dist/doraemon.umd.js",
+  "module": "dist/doraemon.es5.js",
   "typings": "dist/types/index.d.ts",
   "files": [
     "dist",
-    "src/types/global.d.ts",
     "README.md"
   ],
   "scripts": {
+    "clean": "rm -rf ./dist",
     "lint": "tslint --project tsconfig.json",
     "lint-fix": "tslint --fix --project tsconfig.json",
     "test": "jest --clearCache && jest --detectOpenHandles",
-    "build": "tsc --module commonjs && rollup -c rollup.config.ts",
+    "tsc": "tsc --module commonjs",
+    "copy": "copyfiles -f -V ./src/types/*.d.ts ./dist/types",
+    "rollup": "rollup -c rollup.config.ts",
+    "build": "npm run tsc && npm run rollup && npm run copy",
     "pre-pub": "npm run test && npm run build"
   },
   "repository": {
@@ -57,6 +59,7 @@
     "@rollup/plugin-commonjs": "^13.0.0",
     "@rollup/plugin-node-resolve": "^8.0.1",
     "@types/jest": "^26.0.0",
+    "copyfiles": "^2.3.0",
     "eslint": "^7.2.0",
     "husky": "^4.2.5",
     "jest": "^26.0.1",

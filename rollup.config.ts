@@ -13,9 +13,10 @@ export default {
   output: [
     {
       name: pkg.main,
-      file: pkg.browser,
+      file: pkg.main,
       format: "umd",
       sourcemap: true,
+      exports: 'named',
     },
     {
       file: pkg.module,
