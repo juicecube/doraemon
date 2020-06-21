@@ -1,10 +1,22 @@
 {
   "name": "@mlz/doraemon",
   "version": "0.0.1",
-  "description": "项目常用工具函数集合，释放你的Ctrl C、Ctrl V键",
-  "main": "index.js",
+  "description": "项目常用工具函数集合，释放你的Ctrl C、Ctrl V",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "browser": "dist/bundle.umd.js",
+  "typings": "dist/types/index.d.ts",
+  "files": [
+    "dist",
+    "src/types/global.d.ts",
+    "README.md"
+  ],
   "scripts": {
-    "test": "jest --clearCache && jest --detectOpenHandles"
+    "lint": "tslint --project tsconfig.json",
+    "lint-fix": "tslint --fix --project tsconfig.json",
+    "test": "jest --clearCache && jest --detectOpenHandles",
+    "build": "tsc --module commonjs && rollup -c rollup.config.ts",
+    "pre-pub": "npm run test && npm run build"
   },
   "repository": {
     "type": "git",
@@ -15,7 +27,7 @@
     "utils",
     "typescript"
   ],
-  "author": "juicecube/urnotzane",
+  "author": "urnotzane",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/juicecube/doraemon/issues"
@@ -42,15 +54,21 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@mlz/lint": "^1.1.10",
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.1",
     "@types/jest": "^26.0.0",
     "eslint": "^7.2.0",
     "husky": "^4.2.5",
     "jest": "^26.0.1",
     "lint-staged": "^10.2.10",
     "rollup": "^2.16.1",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-sourcemaps": "^0.6.2",
+    "rollup-plugin-typescript2": "^0.27.1",
     "ts-jest": "^26.1.0",
     "ts-lint": "^4.5.1",
     "ts-loader": "^7.0.5",
+    "tslib": "^2.0.0",
     "typescript": "^3.9.5"
   }
 }

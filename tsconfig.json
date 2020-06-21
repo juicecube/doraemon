@@ -1,20 +1,35 @@
 {
-  "extends": "./node_modules/@mlz/lint/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
       "src": ["./src/*"]
-    }
+    },
+    "moduleResolution": "node",
+    "target": "es5",
+    "module":"es2015",
+    "lib": ["es2015", "es2016", "es2017", "dom"],
+    "strict": true,
+    "sourceMap": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declarationDir": "dist/types",
+    "outDir": "dist/lib",
+    "typeRoots": [
+      "./src/types/global.d.ts"
+    ],
+    "noImplicitAny": false,
+    "strictNullChecks": false
   },
   "include": [
     "src/**/*",
-    "test/**/*"
+    "src/types/global.d.ts"
   ],
   "exclude": [
     "node_modules",
-    "build"
+    "dist",
+    "test"
   ],
-  "files": [
-    "./types/index.d.ts"
-  ]
+  "files": ["./src/types/global.d.ts"]
 }
