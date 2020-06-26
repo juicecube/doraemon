@@ -1,7 +1,10 @@
 {
-  "private": true,
-  "name": "doraemon",
-  "version": "1.0.0",
+  "name": "@mlz/doraemon",
+  "version": "0.0.1",
+  "description": "项目常用工具函数集合，释放你的Ctrl C、Ctrl V",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/types/index.d.ts",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -10,36 +13,79 @@
     "deploy": "npm run docs:build && npm run docs:deploy",
     "release": "npm run build && npm publish",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
-    "test": "umi-test",
-    "test:coverage": "umi-test --coverage"
+    "lint": "tslint --project tsconfig.json",
+    "lint-fix": "tslint --fix --project tsconfig.json",
+    "test": "jest --clearCache && jest --detectOpenHandles",
+    "tsc": "tsc --module commonjs",
+    "pre-pub": "npm run test && npm run build"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "typings": "dist/index.d.ts",
-  "gitHooks": {
-    "pre-commit": "lint-staged"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
   },
   "lint-staged": {
-    "*.{js,jsx,less,md,json}": [
+    "*.{md,json}": [
       "prettier --write"
     ],
-    "*.ts?(x)": [
-      "prettier --parser=typescript --write"
+    "*.{js,ts,tsx}": [
+      "eslint"
     ]
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juicecube/doraemon.git"
+  },
+  "keywords": [
+    "mlz",
+    "utils",
+    "typescript"
+  ],
+  "author": "urnotzane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juicecube/doraemon/issues"
+  },
+  "homepage": "https://github.com/juicecube/doraemon#readme",
   "dependencies": {
-    "react": "^16.12.0"
   },
   "devDependencies": {
-    "@mlz/lint": "^1.1.10",
-    "@types/jest": "^26.0.0",
     "@umijs/preset-react": "1.x",
     "@umijs/test": "^3.0.5",
     "dumi": "^1.0.8",
     "father-build": "^1.17.2",
     "gh-pages": "^3.0.0",
-    "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
-    "yorkie": "^2.0.0"
+    "yorkie": "^2.0.0",
+    "react": "^16.12.0",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@mlz/lint": "^1.1.10",
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.1",
+    "@types/jest": "^26.0.0",
+    "copyfiles": "^2.3.0",
+    "eslint": "^7.2.0",
+    "jest": "^26.0.1",
+    "lint-staged": "^10.2.10",
+    "rollup": "^2.16.1",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-sourcemaps": "^0.6.2",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "ts-jest": "^26.1.0",
+    "ts-lint": "^4.5.1",
+    "ts-loader": "^7.0.5",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.5"
   }
 }

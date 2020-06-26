@@ -1,3 +1,13 @@
-import { getUrlQuery } from './Url';
+import { sum } from './sum';
+import { getUrlQuery } from './getUrlQuery';
+export {
+  getUrlQuery,
+  sum,
+};
+export const doraemaon = {
+  sum,
+  getUrlQuery,
+};
 
-export { getUrlQuery };
+// eslint-disable-next-line import/no-default-export
+export default doraemaon;

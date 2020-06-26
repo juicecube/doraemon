@@ -1,15 +1,33 @@
 {
-  "extends": "./node_modules/@mlz/lint/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "*": ["."],
-      "root": ["."]
+      "src": ["./src/*"]
     },
+    "moduleResolution": "node",
+    "target": "es5",
+    "module":"es2015",
+    "lib": ["es2015", "es2016", "es2017", "dom"],
+    "strict": true,
+    "sourceMap": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declarationDir": "dist/types",
+    "outDir": "dist/lib",
+    "noImplicitAny": false,
     "checkJs": false,
     "allowJs": false,
-    "declaration": true
+    "strictNullChecks": false
   },
-  "include": ["src/**/*", "test/**/*", "index.d.ts"],
-  "exclude": ["node_modules", "mochawesome-report", "test"]
+  "include": [
+    "src/**/*", "test/**/*", "index.d.ts"
+  ],
+  "exclude": [
+    "./node_modules",
+    "./dist",
+    "./test",
+    "mochawesome-report"
+  ]
 }

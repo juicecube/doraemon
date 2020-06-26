@@ -19,3 +19,6 @@
 .umi-production
 .umi-test
 .env.local
+
+# jest报表
+coverage
