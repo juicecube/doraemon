@@ -65,7 +65,6 @@
     "@commitlint/config-conventional": "^8.3.4",
     "@mlz/lint": "^1.1.10",
     "@types/jest": "^26.0.0",
-    "@umijs/test": "^3.0.5",
     "copyfiles": "^2.3.0",
     "dumi": "^1.0.8",
     "eslint": "^7.2.0",
