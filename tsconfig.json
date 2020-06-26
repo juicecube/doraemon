@@ -21,12 +21,11 @@
     "strictNullChecks": false
   },
   "include": [
-    "src/**/*", "test/**/*", "index.d.ts"
+    "src/**/*", "test/**/*", "src/index.d.ts"
   ],
   "exclude": [
     "./node_modules",
     "./dist",
-    "./test",
-    "mochawesome-report"
+    "./test"
   ]
 }
