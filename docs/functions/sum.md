@@ -1,3 +1,11 @@
+---
+title: sum
+nav:
+  order: 2
+  title: 方法
+toc: menu
+---
+
 # sum
 返回两数相加之和。
 ***

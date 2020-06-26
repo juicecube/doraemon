@@ -1,7 +1,8 @@
 ---
-group:
-  title: 方法
+title: getUrlQuery
+toc: menu
 ---
+
 # getUrlQuery
 返回url参数。
 ***

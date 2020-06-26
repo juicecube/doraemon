@@ -27,3 +27,6 @@ Build library via `father-build`,
 ```bash
 $ npm run build
 ```
+
+## 文档目录
+参照`https://github.com/umijs/dumi`
