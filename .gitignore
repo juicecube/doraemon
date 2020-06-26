@@ -10,6 +10,8 @@
 # production
 /dist
 /docs-dist
+/lib
+/es
 
 # misc
 .DS_Store
@@ -20,5 +22,5 @@
 .umi-test
 .env.local
 
-# jest报表
+# 测试
 coverage
