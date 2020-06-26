@@ -4,7 +4,7 @@ export default {
   entry: ['src/index.ts'],
   overridesByEntry: {
     'src/index.ts': {
-      file: `/es/index`,
+      file: `./dist/es/index`,
     },
   },
   esm: {

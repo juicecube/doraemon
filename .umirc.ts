@@ -2,10 +2,11 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   title: 'doraemon',
+  description: '项目常用工具函数集合，释放你的 Ctrl C、Ctrl V',
   favicon:
     'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
   logo:
     'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
-  outputPath: 'docs-dist',
+  outputPath: 'docs-dist'
   // more config: https://d.umijs.org/config
 });

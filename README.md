@@ -1,6 +1,6 @@
 # doraemon
 
-项目常用工具函数集合，释放你的 Ctrl C、Ctrl V 键。
+项目常用工具函数集合，释放你的 Ctrl C、Ctrl V。
 
 ## Getting Started
 
