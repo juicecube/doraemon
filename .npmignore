@@ -1,6 +1,5 @@
 /test/
 /coverage/
-/types/
 .gitignore
 .npmignore
 jest.config.js

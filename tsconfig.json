@@ -1,4 +1,5 @@
 {
+  "extends": "./node_modules/@mlz/lint/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
@@ -14,13 +15,13 @@
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "declarationDir": "dist/types",
-    "outDir": "dist/lib",
     "noImplicitAny": false,
+    "checkJs": false,
+    "allowJs": false,
     "strictNullChecks": false
   },
   "include": [
-    "./src"
+    "src/**/*", "test/**/*", "src/index.d.ts"
   ],
   "exclude": [
     "./node_modules",

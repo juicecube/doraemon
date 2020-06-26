@@ -1,3 +1,5 @@
+import { IObject } from './global';
+
 /** 获取url参数 */
 export const getUrlQuery = (url?:string) => {
   const result:IObject = {};
