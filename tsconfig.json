@@ -21,7 +21,7 @@
     "strictNullChecks": false
   },
   "include": [
-    "src/**/*", "test/**/*", "src/index.d.ts"
+    "src/**/*", "test/**/*"
   ],
   "exclude": [
     "./node_modules",

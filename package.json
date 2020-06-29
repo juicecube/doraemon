@@ -1,6 +1,6 @@
 {
   "name": "@mlz/doraemon",
-  "version": "0.0.2",
+  "version": "0.3.0",
   "description": "常用工具函数集合，释放你的Ctrl C、Ctrl V",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -59,7 +59,6 @@
     "url": "https://github.com/juicecube/doraemon/issues"
   },
   "homepage": "https://github.com/juicecube/doraemon#readme",
-  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
