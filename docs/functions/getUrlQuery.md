@@ -1,6 +1,7 @@
 ---
-title: getUrlQuery
-toc: menu
+group:
+  title: 方法
+  toc: menu
 ---
 
 # getUrlQuery

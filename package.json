@@ -18,7 +18,8 @@
     "test": "jest --clearCache && jest --detectOpenHandles",
     "tsc": "tsc --module commonjs",
     "pre-pub": "npm run test && npm run build",
-    "cname": "copyfiles -f -V docs/CNAME docs-dist"
+    "cname": "copyfiles -f -V docs/CNAME docs-dist",
+    "publish": "npm run pre-hub && npm publish"
   },
   "husky": {
     "hooks": {
@@ -47,6 +48,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/juicecube/doraemon.git"
+  },
+  "publishConfig": {
+    "registry": "https://www.npmjs.com/package/@mlz/doraemon"
   },
   "keywords": [
     "mlz",
