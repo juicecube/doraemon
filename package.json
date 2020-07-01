@@ -1,6 +1,6 @@
 {
   "name": "@mlz/doraemon",
-  "version": "0.0.2",
+  "version": "0.3.0",
   "description": "常用工具函数集合，释放你的Ctrl C、Ctrl V",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -18,7 +18,8 @@
     "test": "jest --clearCache && jest --detectOpenHandles",
     "tsc": "tsc --module commonjs",
     "pre-pub": "npm run test && npm run build",
-    "cname": "copyfiles -f -V docs/CNAME docs-dist"
+    "cname": "copyfiles -f -V docs/CNAME docs-dist",
+    "publish": "npm run pre-hub && npm publish"
   },
   "husky": {
     "hooks": {
@@ -48,6 +49,9 @@
     "type": "git",
     "url": "git+https://github.com/juicecube/doraemon.git"
   },
+  "publishConfig": {
+    "registry": "https://www.npmjs.com/package/@mlz/doraemon"
+  },
   "keywords": [
     "mlz",
     "utils",
@@ -59,7 +63,6 @@
     "url": "https://github.com/juicecube/doraemon/issues"
   },
   "homepage": "https://github.com/juicecube/doraemon#readme",
-  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",

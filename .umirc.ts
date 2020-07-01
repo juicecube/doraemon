@@ -7,7 +7,7 @@ export default defineConfig({
   favicon: logo,
   logo: logo,
   publicPath: '/',
-  mode: 'site',
+  // mode: 'site',
   outputPath: 'docs-dist',
   exportStatic: {}, // 会生成对应的静态html
   hash: true,
