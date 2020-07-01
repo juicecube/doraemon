@@ -50,7 +50,7 @@
     "url": "git+https://github.com/juicecube/doraemon.git"
   },
   "publishConfig": {
-    "registry": "https://www.npmjs.com/package/@mlz/doraemon"
+    "registry": "https://npm.pkg.github.com/"
   },
   "keywords": [
     "mlz",
