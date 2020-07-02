@@ -25,3 +25,5 @@ export const getUrlQuery = (url?:string) => {
   });
   return result;
 };
+
+export default getUrlQuery;

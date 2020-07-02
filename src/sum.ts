@@ -5,3 +5,5 @@ export const sum = (a?:number, b?:number) => {
   }
   return 0;
 };
+
+export default sum;
