@@ -22,8 +22,7 @@ npm i @cmao/doraemon
     "plugins": [
       ["import", {
         "libraryName": "@cmao/doraemon",
-        "camel2DashComponentName": false,
-        "transformToDefaultImport": false
+        "camel2DashComponentName": false
       }]
     ]
   }
