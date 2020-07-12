@@ -8,7 +8,7 @@ install:
   - "npm install"
   - "npm install -g codecov"
 script:
-  - "npm run test"
+  - "npm run test:prod"
   - "codecov"
 deploy:
   provider: npm
@@ -19,3 +19,10 @@ deploy:
     tags: true
     branch: master
   tag: latest
+deploy:
+  provider: pages
+  cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
