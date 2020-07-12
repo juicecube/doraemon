@@ -20,6 +20,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12
+          registry-url: 'https://registry.npmjs.org'
       - run: npm ci
       - run: npm run post-publish
         env:
@@ -34,6 +35,10 @@ jobs:
           persist-credentials: false
 
       - name: Deploy pages 🚀
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          repo-token: ${{ secrets.ACCESS_TOKEN }}
         run: |
           npm ci
           npm run deploy
