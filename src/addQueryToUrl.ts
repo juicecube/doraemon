@@ -1,5 +1,5 @@
 import { IObject } from './global';
-import { isObject, isString, isUndefined, isNull } from './utils';
+import { isObject, isString, isUndefined, isNull } from './istype';
 
 /** 向url字符串追加参数 */
 export function addQueryToUrl(query:IObject, url?:string):string {
@@ -16,13 +16,14 @@ export function addQueryToUrl(query:IObject, url?:string):string {
     return url;
   }
   const startIndex = url.indexOf('?');
+  const lastIndex = url.length - 1;
   /**
    * - 如果没有？号
    * - 如果有？号且不是最后一个字符串
    */
   if (startIndex === -1) {
     url += '?';
-  } else if (startIndex !== url.length - 1) {
+  } else if (startIndex !== lastIndex && url.lastIndexOf('&') !== lastIndex) {
     url += '&';
   }
   for (const key in query) {

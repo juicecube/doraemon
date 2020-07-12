@@ -46,6 +46,10 @@ describe('addQueryToUrl', () => {
   it('has a `?` in url', () => {
     expect(addQueryToUrl(query, `${url}?`)).toEqual(result);
   });
+  it('has a `?` and the last character is `&` in url', () => {
+    const _url = `${url}?author=urnotzane`;
+    expect(addQueryToUrl(query, `${_url}&`)).toEqual(`${_url}&name=doraemon&time=2020`);
+  });
   it('a parameter has been added to the end of the url', () => {
     const _url = `${url}?author=urnotzane`;
     expect(addQueryToUrl(query, _url)).toEqual(`${_url}&name=doraemon&time=2020`);

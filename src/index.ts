@@ -3,7 +3,7 @@ import { addQueryToUrl } from './addQueryToUrl';
 import {
   isNull, isNumber, isArray, isDate, isObject, isString,
   isFunction, isBoolean, isRegExp, isUndefined,
-} from './utils';
+} from './istype';
 
 export {
   isNull,
