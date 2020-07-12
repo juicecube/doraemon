@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "10"
-brancher: 
+branches: 
   only:
     - "master"
 install:
@@ -14,9 +14,8 @@ deploy:
   provider: npm
   email: "$NPM_EMAIL"
   api_key: "$NPM_TOKEN"
-  skip_cleanup: true
+  cleanup: false
   on:
     tags: true
     branch: master
   tag: latest
-  condition: '$TRAVIS_TAG =~ ^v[0-9]+.[0-9]+.[0-9]+$'

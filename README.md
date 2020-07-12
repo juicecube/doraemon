@@ -2,7 +2,12 @@
 
 常用工具函数集合，释放你的 Ctrl C、Ctrl V。
 
-[![Build Status](https://travis-ci.org/juicecube/doraemon.svg?branch=master&style=for-the-badge)](https://travis-ci.org/juicecube/doraemon)
+[![](https://img.shields.io/travis/juicecube/doraemon/master?style=flat-square)](https://travis-ci.org/juicecube/doraemon)
+[![](https://img.shields.io/codecov/c/gh/juicecube/doraemon/master?style=flat-square)](https://travis-ci.org/juicecube/doraemon)
+[![](https://img.shields.io/bundlephobia/min/@mlz/doraemon?style=flat-square)](https://www.npmjs.com/package/@mlz/doraemon)
+[![](https://img.shields.io/github/license/juicecube/doraemon?style=flat-square)](https://github.com/juicecube/doraemon/blob/feat-badge/LICENSE)
+[![](https://img.shields.io/badge/website-Doraemon-brightgreen?style=flat-square)](https://doraemon.urnotzane.tech)
+
 ## 使用
 
 ### 安装
