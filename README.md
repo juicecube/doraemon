@@ -3,7 +3,7 @@
 常用工具函数集合，释放你的 Ctrl C、Ctrl V。
 
 [![](https://img.shields.io/github/workflow/status/juicecube/doraemon/npm-publish?style=flat-square&logo=github)](https://travis-ci.org/juicecube/doraemon)
-[![](https://img.shields.io/codecov/c/gh/juicecube/doraemon/master?style=flat-square&logo=codecov)](https://travis-ci.org/juicecube/doraemon)
+[![](https://img.shields.io/codecov/c/gh/juicecube/doraemon/master?style=flat-square&logo=codecov)](https://codecov.io/gh/juicecube/doraemon/branch/master)
 [![](https://img.shields.io/bundlephobia/min/@mlz/doraemon?style=flat-square&logo=npm)](https://www.npmjs.com/package/@mlz/doraemon)
 [![](https://img.shields.io/github/license/juicecube/doraemon?style=flat-square&logo=github)](https://github.com/juicecube/doraemon/blob/feat-badge/LICENSE)
 [![](https://img.shields.io/badge/website-Doraemon-brightgreen?style=flat-square&logo=github)](https://doraemon.urnotzane.tech)
