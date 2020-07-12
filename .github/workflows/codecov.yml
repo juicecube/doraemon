@@ -17,7 +17,11 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@master
-      - name: Test 🐾
+      - name: Test 💉
+        run: |
+          npm ci
+          npm run test:prod
+      - name: Upload report 📷
         uses: codecov/codecov-action@v1.0.5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
