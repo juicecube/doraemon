@@ -2,6 +2,7 @@
 
 常用工具函数集合，释放你的 Ctrl C、Ctrl V。
 
+[![Build Status](https://travis-ci.org/juicecube/doraemon.svg?branch=master&style=for-the-badge)](https://travis-ci.org/juicecube/doraemon)
 ## 使用
 
 ### 安装
