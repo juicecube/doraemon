@@ -43,15 +43,7 @@ npm i @cmao/doraemon
 更多使用文档详看[Doraemon](https://doraemon.urnotzane.tech)。
 
 ## TODO
-
-- [x] `getUrlQuery`: 获取url上的参数。
-- [ ] `addQueryToUrl`: 向url后面添加参数。
-- [ ] `deleteFieldsFromObj`: 从对象中删除元素。
-- [ ] `checkPhoneNumber`: 检查手机号是否合法。
-- [ ] `isMobile`: 是否是手机环境。
-- [ ] `isIos`: 是否是ios。
-- [ ] `isWechat`: 是否是微信环境。
-- [ ] `numberToCoin`: 数字转换成带逗号的金额。
+[TODO](https://github.com/juicecube/doraemon/issues/7);
 
 ## 开发
 
