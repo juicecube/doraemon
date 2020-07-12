@@ -36,3 +36,5 @@ export function addQueryToUrl(query:IObject, url?:string):string {
   url = url.substring(0, url.length - 1);
   return url;
 }
+
+export default addQueryToUrl;
