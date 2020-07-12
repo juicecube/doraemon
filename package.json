@@ -1,21 +1,24 @@
 {
   "name": "@mlz/doraemon",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "常用工具函数集合，释放你的Ctrl C、Ctrl V",
   "main": "lib/index.js",
   "module": "es/index.js",
   "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "build": "father-build",
     "deploy": "npm run docs:build && npm run cname && npm run docs:deploy",
-    "release": "npm run build && npm publish",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "lint": "tslint --project tsconfig.json",
     "lint-fix": "tslint --fix --project tsconfig.json",
     "test": "jest --clearCache && jest --detectOpenHandles",
+    "test:prod": "jest --clearCache && jest --silent",
     "tsc": "tsc --module commonjs",
     "pre-pub": "npm run test && npm run build",
     "cname": "copyfiles -f -V docs/CNAME docs-dist",
