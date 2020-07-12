@@ -1,5 +1,5 @@
 import { IObject } from './global';
-import { isObject, isString, isUndefined, isNull } from './istype';
+import { isObject, isString, isUndefined, isNull } from './typeChecker';
 
 /** 向url字符串追加参数 */
 export function addQueryToUrl(query:IObject, url?:string):string {

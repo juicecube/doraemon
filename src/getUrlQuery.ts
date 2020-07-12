@@ -1,5 +1,5 @@
 import { IObject } from './global';
-import { isString } from './istype';
+import { isString } from './typeChecker';
 
 /** 获取url参数 */
 export const getUrlQuery = (url:string) => {

@@ -1,9 +1,9 @@
 ---
-title: isType
+title: typeChecker
 toc: menu
 ---
 
-# isType
+# typeChecker
 检查数据类型。
 
 ## 描述

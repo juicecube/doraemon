@@ -1,4 +1,4 @@
-import * as utils from '../src/istype';
+import * as utils from '../src/typeChecker';
 
 describe('utils', () => {
   it('isNumber', () => {

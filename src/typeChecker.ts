@@ -17,3 +17,16 @@ export const isFunction = (data:any) => Object.prototype.toString.call(data) ===
 export const isDate = (data:any) => Object.prototype.toString.call(data) === '[object Date]';
 
 export const isRegExp = (data:any) => Object.prototype.toString.call(data) === '[object RegExp]';
+
+export default {
+  isNull,
+  isUndefined,
+  isNumber,
+  isBoolean,
+  isArray,
+  isDate,
+  isRegExp,
+  isObject,
+  isString,
+  isFunction,
+};
