@@ -12,6 +12,7 @@ module.exports = {
     '<rootDir>/node_modules/',
     '<rootDir>/test/',
     '<rootDir>/deps/',
+    '<rootDir>/src/index.ts',
   ],
   collectCoverageFrom: ['src/**/*.ts'],
 };

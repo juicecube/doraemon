@@ -2,9 +2,9 @@ import { getUrlQuery } from '../src/getUrlQuery';
 
 describe('getUrlQuery', () => {
   it('null', () => {
-    expect(getUrlQuery()).toEqual({});
+    expect(getUrlQuery(null)).toEqual({});
   });
-  it('space string', () => {
+  it('empty string', () => {
     expect(getUrlQuery('')).toEqual({});
   });
   it('https://example', () => {

@@ -1,10 +1,11 @@
 import { IObject } from './global';
+import { isString } from './typeChecker';
 
 /** 获取url参数 */
-export const getUrlQuery = (url?:string) => {
+export const getUrlQuery = (url:string) => {
   const result:IObject = {};
   // 不是string
-  if (typeof url !== 'string') {
+  if (!isString(url)) {
     return result;
   }
   const start = url.indexOf('?');
