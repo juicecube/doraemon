@@ -21,7 +21,7 @@ jobs:
         uses: codecov/codecov-action@v1.0.5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          file: ../../coverage/coverage.xml
+          file: coverage/coverage.xml
           flags: jest
           name: codecov-umbrella
           fail_ci_if_error: true
