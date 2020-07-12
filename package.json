@@ -5,13 +5,15 @@
   "main": "lib/index.js",
   "module": "es/index.js",
   "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "build": "father-build",
     "deploy": "npm run docs:build && npm run cname && npm run docs:deploy",
-    "release": "npm run build && npm publish",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "lint": "tslint --project tsconfig.json",
     "lint-fix": "tslint --fix --project tsconfig.json",
