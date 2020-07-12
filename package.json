@@ -22,7 +22,7 @@
     "tsc": "tsc --module commonjs",
     "pre-pub": "npm run test && npm run build",
     "cname": "copyfiles -f -V docs/CNAME docs-dist",
-    "publish": "npm run pre-pub && npm publish"
+    "post-publish": "npm run pre-pub && npm publish --tag=latest"
   },
   "husky": {
     "hooks": {
