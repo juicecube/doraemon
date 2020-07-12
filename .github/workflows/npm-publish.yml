@@ -33,8 +33,6 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
-      - run: git config --global user.name "urnotzane"
-      - run: git config --global user.email "urnotzane@163.com"
       - run: npm run deploy
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.ACCESS_TOKEN}}
