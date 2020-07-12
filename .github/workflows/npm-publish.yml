@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: 12
           repo-token: ${{ secrets.ACCESS_TOKEN }}
-        run: |
+      - run: |
           npm ci
           npm run deploy
         env:
