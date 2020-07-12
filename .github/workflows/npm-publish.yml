@@ -21,8 +21,9 @@ jobs:
         with:
           node-version: 12
           registry-url: 'https://registry.npmjs.org'
-      - run: npm ci
-      - run: npm run post-publish
+        run: |
+          npm ci
+          npm run post-publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
@@ -34,13 +35,16 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Deploy pages 🚀
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12
-          repo-token: ${{ secrets.ACCESS_TOKEN }}
-      - run: |
-          npm ci
-          npm run deploy
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+    - name: Build pages 📦
+      run: |
+        npm ci
+        npm run docs:build
+        npm run cname
+
+    - name: Deploy pages 🚀
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: docs-dist
+        CLEAN: true

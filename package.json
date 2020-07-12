@@ -1,6 +1,6 @@
 {
   "name": "@mlz/doraemon",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "常用工具函数集合，释放你的Ctrl C、Ctrl V",
   "main": "lib/index.js",
   "module": "es/index.js",
