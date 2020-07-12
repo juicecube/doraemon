@@ -12,7 +12,7 @@ on:
       - master
 
 jobs:
-  publish:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
