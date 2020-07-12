@@ -5,9 +5,6 @@
   "main": "lib/index.js",
   "module": "es/index.js",
   "sideEffects": false,
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -20,7 +17,7 @@
     "test": "jest --clearCache && jest --detectOpenHandles",
     "test:prod": "jest --clearCache && jest --silent",
     "tsc": "tsc --module commonjs",
-    "pre-pub": "npm run test && npm run build",
+    "pre-pub": "npm run test:prod && npm run build",
     "cname": "copyfiles -f -V docs/CNAME docs-dist",
     "publish": "npm run pre-pub && npm publish"
   },
