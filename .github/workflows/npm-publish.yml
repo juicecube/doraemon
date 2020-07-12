@@ -4,34 +4,23 @@
 name: Node.js Package
 
 on:
-  - release:
-      types: [created]
+  release:
+    types: [created]
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - run: npm ci
-      - run: npm run pre-pub
-
-  publish-npm:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org
-      - run: npm publish
+      - run: npm ci
+      - run: npm run publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
 
-  publish-gpr:
+  publish-pages:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
