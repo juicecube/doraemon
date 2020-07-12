@@ -11,18 +11,17 @@ script:
   - "npm run test:prod"
   - "codecov"
 deploy:
-  provider: npm
-  email: "$NPM_EMAIL"
-  api_key: "$NPM_TOKEN"
-  cleanup: false
-  on:
-    tags: true
-    branch: master
-  tag: latest
-deploy:
-  provider: pages
-  cleanup: true
-  github_token: $GITHUB_TOKEN
-  keep_history: true
-  on:
-    branch: master
+  - provider: npm
+    email: "$NPM_EMAIL"
+    api_key: "$NPM_TOKEN"
+    cleanup: false
+    on:
+      tags: true
+      branch: master
+    tag: latest
+  - provider: pages
+    cleanup: true
+    github_token: $GITHUB_TOKEN
+    keep_history: true
+    on:
+      branch: master
