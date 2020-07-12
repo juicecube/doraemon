@@ -35,16 +35,16 @@ jobs:
         with:
           persist-credentials: false
 
-    - name: Build pages 📦
-      run: |
-        npm ci
-        npm run docs:build
-        npm run cname
+      - name: Build pages 📦
+        run: |
+          npm ci
+          npm run docs:build
+          npm run cname
 
-    - name: Deploy pages 🚀
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
-        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: docs-dist
-        CLEAN: true
+      - name: Deploy pages 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: docs-dist
+          CLEAN: true
