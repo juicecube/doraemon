@@ -74,7 +74,8 @@ npm run build
 项目发布
 
 ```bash
-npm run publish
+git checkout master
+npm run release
 ```
 
 ## 贡献
