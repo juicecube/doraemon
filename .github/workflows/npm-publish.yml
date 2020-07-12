@@ -25,14 +25,20 @@ jobs:
   publish-pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
         with:
           persist-credentials: false
-      - uses: actions/setup-node@v1
+
+      - name: Deploy pages
+        run: |
+          npm ci
+          npm run docs:build
+          npm run cname
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          node-version: 12
-          registry-url: https://npm.pkg.github.com/
-      - run: npm ci
-      - run: npm run deploy
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.ACCESS_TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: docs-dist
