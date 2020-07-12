@@ -5,8 +5,8 @@ name: Publish and deploy pages
 
 on:
   push:
-    branches:
-      - master
+    tags:
+      - 'v*'
 
 jobs:
   publish:
@@ -27,7 +27,6 @@ jobs:
           npm run post-publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-
   publish-pages:
     runs-on: ubuntu-latest
     steps:
