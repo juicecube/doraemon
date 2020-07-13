@@ -22,10 +22,10 @@ jobs:
           npm ci
           npm run test:prod
       - name: Upload report 📷
-        uses: codecov/codecov-action@v1.0.5
+        uses: codecov/codecov-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           file: ./coverage/clover.xml
-          flags: jest
+          flags: unittests
           name: codecov-umbrella
           fail_ci_if_error: true
