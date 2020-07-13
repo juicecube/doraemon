@@ -26,6 +26,5 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           file: ./coverage/clover.xml
-          flags: integration
           name: codecov-umbrella
           fail_ci_if_error: true
