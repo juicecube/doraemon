@@ -19,10 +19,14 @@ npm run build
 ```
 
 项目发布
+- mac:
+  ```bash
+  npm run release
+  ```
 
-```bash
-npm run release
-```
+- windows:
+
+  在仓库新增一个tag即可发布项目到npm。
 
 ## 贡献
 
