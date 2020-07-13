@@ -13,6 +13,7 @@ module.exports = {
     '<rootDir>/test/',
     '<rootDir>/deps/',
     '<rootDir>/src/index.ts',
+    '<rootDir>/src/.umi',
   ],
   collectCoverageFrom: ['src/**/*.ts'],
 };

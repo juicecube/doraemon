@@ -8,4 +8,10 @@ export default {
     type: 'babel',
     lazy: true,
   },
+  extraBabelPlugins: [
+    ['babel-plugin-import', {
+      libraryName: 'lodash',
+      libraryDirectory: 'es',
+    }],
+  ],
 };

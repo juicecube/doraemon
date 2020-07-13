@@ -1,17 +1,17 @@
 import { IObject } from './global';
-import { isObject, isString, isUndefined, isNull } from './typeChecker';
+import _ from 'lodash';
 
 /** 向url字符串追加参数 */
 export function addQueryToUrl(query:IObject, url?:string):string {
   if (url) {
-    if (!isString(url)) {
+    if (!_.isString(url)) {
       console.warn('url is not a string');
       return '';
     }
   } else {
     url = '';
   }
-  if (!query || !isObject(query)) {
+  if (!query || !_.isPlainObject(query)) {
     console.warn('`query` is not an object!');
     return url;
   }
@@ -28,7 +28,7 @@ export function addQueryToUrl(query:IObject, url?:string):string {
   }
   for (const key in query) {
     const value = query[key];
-    if (!isUndefined(value) && !isNull(value)) {
+    if (!_.isUndefined(value) && !_.isNull(value)) {
       url += `${key}=${query[key]}&`;
     }
   }

@@ -1,11 +1,11 @@
 import { IObject } from './global';
-import { isString } from './typeChecker';
+import _ from 'lodash';
 
 /** 获取url参数 */
 export const getUrlQuery = (url:string) => {
   const result:IObject = {};
   // 不是string
-  if (!isString(url)) {
+  if (!_.isString(url)) {
     return result;
   }
   const start = url.indexOf('?');
