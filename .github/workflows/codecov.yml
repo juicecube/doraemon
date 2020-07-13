@@ -26,6 +26,9 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           file: ./coverage/clover.xml
-          flags: unittests
+          flags: 
+            unittests:
+              paths: 
+                - test
           name: codecov-umbrella
           fail_ci_if_error: true
