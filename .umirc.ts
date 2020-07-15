@@ -1,6 +1,6 @@
 import { defineConfig } from 'dumi';
 
-const logo = 'https://raw.githubusercontent.com/juicecube/doraemon/master/logo.svg';
+const logo = 'https://github.com/juicecube/doraemon/blob/master/logo.svg';
 export default defineConfig({
   title: 'Doraemon',
   description: '项目常用工具函数集合，释放你的 Ctrl C、Ctrl V',
