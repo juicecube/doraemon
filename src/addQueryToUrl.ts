@@ -26,8 +26,7 @@ export function addQueryToUrl(query:IObject, url?:string):string {
   } else if (startIndex !== lastIndex && url.lastIndexOf('&') !== lastIndex) {
     url += '&';
   }
-  for (const key in query) {
-    const value = query[key];
+  for (const [key, value] of Object.entries(query)) {
     if (!_.isUndefined(value) && !_.isNull(value)) {
       url += `${key}=${query[key]}&`;
     }
