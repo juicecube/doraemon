@@ -1,5 +1,6 @@
 import * as _ from 'lodash';
 
+/** 检查手机号是否合法 */
 export const checkPhoneNumber = (phoneNumber:string|number) => {
   if (_.isNull(phoneNumber) || _.isUndefined(phoneNumber)) {
     return false;
