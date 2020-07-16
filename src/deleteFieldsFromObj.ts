@@ -20,7 +20,3 @@ export const deleteFieldsFromObj = <T = IObject>(target:T, keys:(keyof T)[]):T|{
 };
 
 export default deleteFieldsFromObj;
-deleteFieldsFromObj({
-  a: 1,
-  b: 2,
-}, ['a', 'b']);
