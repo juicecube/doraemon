@@ -11,7 +11,8 @@ export default {
   extraBabelPlugins: [
     ['babel-plugin-import', {
       libraryName: 'lodash',
-      libraryDirectory: 'es',
+      libraryDirectory: '',
+      'camel2DashComponentName': false,
     }],
   ],
 };
