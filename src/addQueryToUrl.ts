@@ -1,5 +1,7 @@
-import { IObject } from './global';
+
 import * as _ from 'lodash';
+
+import { IObject } from './global';
 
 /** 向url字符串追加参数 */
 export function addQueryToUrl(query:IObject, url?:string):string {
