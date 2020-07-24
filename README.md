@@ -35,7 +35,8 @@ npm i @cmao/doraemon
   ```
 3. 引入（省略前两步时就不是按需引入了）
   ```typescript
-  import { getUrlQuery } from '@cmao/doraemon';
+  import { getUrlQuery } from '@mlz
+  /doraemon';
 
   getUrlQuery('https://doraemon.urnotzane.tech?name=doraemon');
   ```
