@@ -12,7 +12,7 @@
 
 ### 安装
 ```bash
-npm i @cmao/doraemon
+npm i @mlz/doraemon
 ```
 
 ### 按需引入
@@ -27,7 +27,7 @@ npm i @cmao/doraemon
   {
     "plugins": [
       ["import", {
-        "libraryName": "@cmao/doraemon",
+        "libraryName": "@mlz/doraemon",
         "camel2DashComponentName": false
       }]
     ]
@@ -35,14 +35,13 @@ npm i @cmao/doraemon
   ```
 3. 引入（省略前两步时就不是按需引入了）
   ```typescript
-  import { getUrlQuery } from '@mlz
-  /doraemon';
+  import { getUrlQuery } from '@mlz/doraemon';
 
   getUrlQuery('https://doraemon.urnotzane.tech?name=doraemon');
   ```
 4. 若不想安装babel-plugin-import，又想按需引入：
   ```typescript
-  import getUrlQuery from '@cmao/doraemon/lib/getUrlQuery';
+  import getUrlQuery from '@mlz/doraemon/lib/getUrlQuery';
 
   getUrlQuery('https://doraemon.urnotzane.tech?name=doraemon');
   ```
