@@ -1,6 +1,6 @@
 module.exports = {
   preset: 'ts-jest',
-  testEnvironment: 'node',
+  testEnvironment: 'jsdom',
   coverageDirectory: 'coverage',
   collectCoverage: true,
   verbose: true,
@@ -11,7 +11,6 @@ module.exports = {
   coveragePathIgnorePatterns: [
     '<rootDir>/node_modules/',
     '<rootDir>/test/',
-    '<rootDir>/deps/',
     '<rootDir>/src/index.ts',
     '<rootDir>/src/.umi',
   ],
