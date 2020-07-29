@@ -4,7 +4,7 @@ import { UserAgentSetter } from './utils/user-agent-setter';
 import { isIos } from '../src/isIos';
 import { userAgentMap } from './constants.ts/user-agent';
 
-describe('isIos|isWechat', () => {
+describe('isIos|isWechat|isMobile', () => {
   const userAgentSetter = new UserAgentSetter();
   afterAll(() => {
     userAgentSetter.reset();
