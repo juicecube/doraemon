@@ -1,3 +1,6 @@
+import { isMobile } from './isMobile';
+import { isWechat } from './isWechat';
+import { isIos } from './isIos';
 import checkPhoneNumber from './checkPhoneNumber';
 import { getUrlQuery } from './getUrlQuery';
 import { addQueryToUrl } from './addQueryToUrl';
@@ -8,6 +11,9 @@ export {
   addQueryToUrl,
   checkPhoneNumber,
   deleteInvalidValue,
+  isIos,
+  isWechat,
+  isMobile,
 };
 
 export const doraemaon = {
@@ -15,6 +21,9 @@ export const doraemaon = {
   addQueryToUrl,
   checkPhoneNumber,
   deleteInvalidValue,
+  isIos,
+  isWechat,
+  isMobile,
 };
 
 export default doraemaon;
