@@ -25,7 +25,9 @@ npm run test
 6. 修改版本号
 
 7. 项目构建
-
+    ```bash
+    npm run build
+    ```
 8. 提交PR
 
 9. 项目发布
