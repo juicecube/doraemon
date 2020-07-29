@@ -7,6 +7,7 @@ group:
 # getUrlQuery
 返回url参数。
 ***
+
 ## 常用
 比如从`location.href`获取参数。
 ```typescript

@@ -1,31 +1,32 @@
 ## 开发
 
-安装依赖
+1. 安装依赖
 
 ```bash
 npm ci
 ```
 
-文档预览
+2. 文档预览
 
 ```bash
 npm start
 ```
 
-构建项目
+3. 贡献代码
+
+4. 编撰文档
+
+5. 运行测试
 
 ```bash
-npm run build
+npm run test
 ```
 
-项目发布
-- mac:
-  ```bash
-  npm run release
-  ```
+6. 修改版本号
 
-- windows:
+7. 提交PR
 
+8. 项目发布
   在仓库新增一个tag即可发布项目到npm。
 
 ## 贡献

@@ -5,8 +5,9 @@ toc: menu
 
 # addQueryToUrl
 向url添加参数。
-## 常用
 ***
+
+## 常用
 ```typescript
 import { addQueryToUrl } from '@mlz/doraemon';
 
@@ -19,7 +20,6 @@ addQueryToUrl(query, url); // https://doraemon.urnotzane.tech?name=doraemon&time
 ```
 
 ## url已经有参数
-***
 ```typescript
 import { addQueryToUrl } from '@mlz/doraemon';
 
@@ -32,7 +32,6 @@ addQueryToUrl(query, url); // https://doraemon.urnotzane.tech?author=urnotzane&n
 ```
 
 ## 缺斤少两用
-***
 ```typescript
 import { addQueryToUrl } from '@mlz/doraemon';
 
