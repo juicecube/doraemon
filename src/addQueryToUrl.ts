@@ -7,14 +7,12 @@ import { IObject } from './global';
 export function addQueryToUrl(query:IObject, url?:string):string {
   if (url) {
     if (!_.isString(url)) {
-      console.warn('url is not a string');
       return '';
     }
   } else {
     url = '';
   }
   if (!query || !_.isPlainObject(query)) {
-    console.warn('`query` is not an object!');
     return url;
   }
   const startIndex = url.indexOf('?');
