@@ -14,6 +14,8 @@ export const digitalToCash = (target:number):string => {
     // 保留两位小数
     decimal = temp.substring(decimalPoint).substr(0, 3);
     temp = temp.substring(0, decimalPoint);
+    // 如果小数点后只有一位数
+    decimal = decimal.length < 3 ? `${decimal}0` : decimal;
   }
   while(temp.length > 0) {
     // 第一次循环无需加,
