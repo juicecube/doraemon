@@ -12,12 +12,12 @@ export class UserAgentSetter {
     });
   }
   /** 设置userAgent */
-  setUserAgent = (userAgent:string) => {
+  set = (userAgent:string) => {
     // @ts-ignore
     navigator.userAgent = userAgent;
   }
   /** 重置为初始值 */
   reset = () => {
-    this.setUserAgent(this._userAgent);
+    this.set(this._userAgent);
   }
 }
