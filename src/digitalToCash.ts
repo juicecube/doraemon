@@ -1,7 +1,7 @@
 import { isNumber } from 'lodash';
 
 /** 数字转换成带逗号的金额并保留2位小数 */
-export const digitalToCash = (target:number) => {
+export const digitalToCash = (target:number):string => {
   let result = '';
   if (!isNumber(target)) {
     return result;
@@ -11,6 +11,7 @@ export const digitalToCash = (target:number) => {
   const decimalPoint = temp.indexOf('.');
   let decimal = '.00';
   if (decimalPoint > -1) {
+    // 保留两位小数
     decimal = temp.substring(decimalPoint).substr(0, 3);
     temp = temp.substring(0, decimalPoint);
   }
