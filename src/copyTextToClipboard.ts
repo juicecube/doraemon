@@ -1,6 +1,6 @@
 import isIos from './isIos';
 
-/** 复制内容并返回复制是否成功 */
+/** 复制字符串至粘贴板并返回复制是否成功 */
 export const copyTextToClipboard = (value:string):Promise<boolean> => new Promise((resolve) => {
   try {
     const oInput = document.createElement('input');
