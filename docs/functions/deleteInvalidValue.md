@@ -8,8 +8,5 @@ toc: menu
 ```typescript
 import { deleteInvalidValue } from '@mlz/doraemon';
 
-deleteFieldsFromObj({}); // {}
-deleteFieldsFromObj([]); // []
-deleteFieldsFromObj(['a']); // ['a']
 deleteFieldsFromObj({ a: NaN, b: 2, c: null, d: undefined }); // { b: 2 }
 ```

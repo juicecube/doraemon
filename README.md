@@ -1,6 +1,6 @@
 # doraemon
 
-常用工具函数集合，释放你的 Ctrl C、Ctrl V。
+项目常用但lodash又没有的工具函数集合，哆啦A梦般方便实用。
 
 [![](https://img.shields.io/github/workflow/status/juicecube/doraemon/npm-publish?style=flat-square&logo=github)](https://github.com/juicecube/doraemon/actions?query=workflow%3Anpm-publish)
 [![](https://img.shields.io/codecov/c/gh/juicecube/doraemon/master?style=flat-square&logo=codecov)](https://codecov.io/gh/juicecube/doraemon/branch/master)
@@ -12,7 +12,7 @@
 
 ### 安装
 ```bash
-npm i @mlz/doraemon
+npm i @mlz/doraemon@latest
 ```
 
 ### 按需引入
