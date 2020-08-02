@@ -12,7 +12,7 @@
 
 ### 安装
 ```bash
-npm i @mlz/doraemon
+npm i @mlz/doraemon@latest
 ```
 
 ### 按需引入
