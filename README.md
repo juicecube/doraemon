@@ -49,7 +49,7 @@ npm i @mlz/doraemon
 更多使用文档详看[Doraemon](https://doraemon.urnotzane.tech)。
 
 ## TODO
-[TODO](https://github.com/juicecube/doraemon/issues/7);
+[TODOS](https://github.com/juicecube/doraemon/projects/3);
 
 ## 须知
 
