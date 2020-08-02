@@ -3,7 +3,7 @@ import { defineConfig } from 'dumi';
 const logo = 'https://gallary.urnotzane.tech/images/2020/07/30/doraemon.png';
 export default defineConfig({
   title: 'Doraemon',
-  description: '项目常用但lodash又没有的工具函数，哆啦A梦般方便实用',
+  description: '项目常用但lodash又没有的工具函数集合，哆啦A梦般方便实用',
   favicon: logo,
   logo: logo,
   publicPath: '/',
