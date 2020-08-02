@@ -7,19 +7,19 @@ export const copyTextToClipboard = (value:string):Promise<boolean> => new Promis
     resolve(false);
   }
   try {
-    const oInput = document.createElement('input');
-    oInput.value = value;
-    document.body.appendChild(oInput);
+    const iInput = document.createElement('input');
+    iInput.value = value;
+    document.body.appendChild(iInput);
     if (isIos()) {
       // 防止低ios系统版本（ios 11）出现弹出小键盘
-      oInput.disabled = true;
-      oInput.setSelectionRange(0, value.length);
+      iInput.disabled = true;
+      iInput.setSelectionRange(0, value.length);
     } else {
-      oInput.select();
+      iInput.select();
     }
     document.execCommand('Copy');
-    oInput.style.display = 'none';
-    document.body.removeChild(oInput);
+    iInput.style.display = 'none';
+    document.body.removeChild(iInput);
     resolve(true);
   } catch (error) {
     resolve(false);
