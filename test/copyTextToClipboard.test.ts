@@ -16,6 +16,9 @@ describe('copyTextToClipboard', () => {
     document.execCommand = undefined;
     await expect(copyTextToClipboard('doraemon')).resolves.toBeFalsy();
   });
+  test('value is not a string', async() => {
+    await expect(copyTextToClipboard({} as string)).resolves.toBeFalsy();
+  });
   test('copy in ios', async() => {
     userAgentSetter.set(userAgentMap.mobileInIos);
     await expect(copyTextToClipboard('doraemon')).resolves.toBeTruthy();

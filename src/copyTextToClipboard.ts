@@ -1,7 +1,11 @@
 import isIos from './isIos';
+import { isString } from 'lodash';
 
 /** 复制字符串至粘贴板并返回复制是否成功 */
 export const copyTextToClipboard = (value:string):Promise<boolean> => new Promise((resolve) => {
+  if (!isString(value)) {
+    resolve(false);
+  }
   try {
     const oInput = document.createElement('input');
     oInput.value = value;
