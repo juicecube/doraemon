@@ -1,6 +1,6 @@
 {
   "name": "@mlz/doraemon",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "项目常用但lodash又没有的工具函数集合，哆啦A梦般方便实用",
   "main": "lib/index.js",
   "module": "es/index.js",
