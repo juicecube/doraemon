@@ -1,1 +1,1 @@
-export const domain = 'https://doraemon.ithen.cn'
+export const domain = 'https://da.ithen.cn'

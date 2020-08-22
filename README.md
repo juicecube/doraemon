@@ -6,7 +6,7 @@
 [![](https://img.shields.io/codecov/c/gh/juicecube/doraemon/master?style=flat-square&logo=codecov)](https://codecov.io/gh/juicecube/doraemon/branch/master)
 [![](https://img.shields.io/bundlephobia/min/@mlz/doraemon?style=flat-square&logo=npm)](https://www.npmjs.com/package/@mlz/doraemon)
 [![](https://img.shields.io/github/license/juicecube/doraemon?style=flat-square&logo=github)](https://github.com/juicecube/doraemon/blob/master/LICENSE)
-[![](https://img.shields.io/badge/website-Doraemon-brightgreen?style=flat-square&logo=github)](https://doraemon.ithen.cn)
+[![](https://img.shields.io/badge/website-Doraemon-brightgreen?style=flat-square&logo=github)](https://da.ithen.cn)
 
 ## 使用
 
@@ -37,16 +37,16 @@ npm i @mlz/doraemon@latest
   ```typescript
   import { getUrlQuery } from '@mlz/doraemon';
 
-  getUrlQuery('https://doraemon.ithen.cn?name=doraemon');
+  getUrlQuery('https://da.ithen.cn?name=doraemon');
   ```
 4. 若不想安装babel-plugin-import，又想按需引入：
   ```typescript
   import getUrlQuery from '@mlz/doraemon/lib/getUrlQuery';
 
-  getUrlQuery('https://doraemon.ithen.cn?name=doraemon');
+  getUrlQuery('https://da.ithen.cn?name=doraemon');
   ```
 
-更多使用文档详看[Doraemon](https://doraemon.ithen.cn)。
+更多使用文档详看[Doraemon](https://da.ithen.cn)。
 
 ## TODO
 [TODOS](https://github.com/juicecube/doraemon/projects/3);

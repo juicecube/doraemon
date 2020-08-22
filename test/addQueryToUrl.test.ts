@@ -15,7 +15,7 @@ const queryUndefined = {
   time: 2020,
   author: undefined,
 };
-const result = 'https://doraemon.ithen.cn?name=doraemon&time=2020';
+const result = `${domain}?name=doraemon&time=2020`;
 const parameterStr = '?name=doraemon&time=2020';
 
 describe('addQueryToUrl', () => {
