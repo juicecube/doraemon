@@ -8,6 +8,7 @@ import deleteInvalidValue from './deleteInvalidValue';
 import digitalToCash from './digitalToCash';
 import copyTextToClipboard from './copyTextToClipboard';
 import limitStringToTarget from './limitStringToTarget';
+import removeUrlParams from './removeUrlParams';
 
 export {
   getUrlQuery,
@@ -20,6 +21,7 @@ export {
   digitalToCash,
   copyTextToClipboard,
   limitStringToTarget,
+  removeUrlParams,
 };
 
 export const doraemaon = {
@@ -33,6 +35,7 @@ export const doraemaon = {
   digitalToCash,
   copyTextToClipboard,
   limitStringToTarget,
+  removeUrlParams,
 };
 
 export default doraemaon;
