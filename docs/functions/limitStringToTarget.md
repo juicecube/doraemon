@@ -9,10 +9,10 @@ group:
 ***
 
 ```javascript
-// 五星红旗...
+// 五星红旗迎风...
 limitStringToTarget('五星红旗迎风飘扬', 6);
 // 五星红旗迎风飘扬
 limitStringToTarget('五星红旗迎风飘扬');
-// 五星红旗。。。
+// 五星红旗迎风。。。
 limitStringToTarget('五星红旗迎风飘扬', 6, '。。。');
 ```
