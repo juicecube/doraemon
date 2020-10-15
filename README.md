@@ -51,6 +51,13 @@ npm i @mlz/doraemon@latest
 ## TODO
 [TODOS](https://github.com/juicecube/doraemon/projects/3);
 
+## 开发
+### 常用命令
+```bash
+# 单个文件测试
+jest test/limitStringToTarget.test.ts
+```
+
 ## 须知
 
 - 如有问题或提需求请提[issue](https://github.com/juicecube/doraemon/issues)。

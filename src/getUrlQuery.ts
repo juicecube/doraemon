@@ -3,7 +3,7 @@ import * as _ from 'lodash';
 import { IObject } from './global';
 
 /** 获取url参数 */
-export const getUrlQuery = (url:string) => {
+export const getUrlQuery = (url:string = location.href) => {
   const result:IObject = {};
   // 不是string
   if (!_.isString(url)) {

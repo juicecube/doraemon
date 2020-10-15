@@ -14,6 +14,8 @@ group:
 import React from 'react';
 import { getUrlQuery } from '@mlz/doraemon';
 
+// 默认取location.href
+getUrlQuery();
 export default (props) => {
   const query = getUrlQuery('https://juicecube.github.io/doraemon?name=doraemon');
   return (
