@@ -7,6 +7,7 @@ import addQueryToUrl from './addQueryToUrl';
 import deleteInvalidValue from './deleteInvalidValue';
 import digitalToCash from './digitalToCash';
 import copyTextToClipboard from './copyTextToClipboard';
+import limitStringToTarget from './limitStringToTarget';
 
 export {
   getUrlQuery,
@@ -18,6 +19,7 @@ export {
   isMobile,
   digitalToCash,
   copyTextToClipboard,
+  limitStringToTarget,
 };
 
 export const doraemaon = {
@@ -30,6 +32,7 @@ export const doraemaon = {
   isMobile,
   digitalToCash,
   copyTextToClipboard,
+  limitStringToTarget,
 };
 
 export default doraemaon;
