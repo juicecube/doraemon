@@ -1,6 +1,13 @@
 import { getUrlQuery } from '../src/getUrlQuery';
+import { domain } from '../src/constants';
+import { LocationSetter } from './utils/location-setter';
 
 describe('getUrlQuery', () => {
+  const locationSetter = new LocationSetter();
+  it('default location.href', () => {
+    locationSetter.set({ href: `${domain}?a=1` });
+    expect(getUrlQuery()).toEqual({ a: '1' });
+  });
   it('null', () => {
     expect(getUrlQuery(null)).toEqual({});
   });
