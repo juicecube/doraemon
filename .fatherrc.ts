@@ -14,5 +14,8 @@ export default {
       libraryDirectory: '',
       'camel2DashComponentName': false,
     }],
+    ["@babel/plugin-transform-runtime", {
+      "corejs": 3
+    }],
   ],
 };
