@@ -14,6 +14,7 @@ export default {
       libraryDirectory: '',
       'camel2DashComponentName': false,
     }],
+    // polyfill
     ["@babel/plugin-transform-runtime", {
       "corejs": 3
     }],
