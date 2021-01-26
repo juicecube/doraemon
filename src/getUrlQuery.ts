@@ -2,7 +2,7 @@ import * as _ from 'lodash';
 
 import { IObject } from './global';
 
-/** 获取url参数 */
+/** 获取url参数，被encode的字符会被decode */
 export const getUrlQuery = (url:string = location.href) => {
   const result:IObject = {};
   // 不是string
@@ -22,7 +22,8 @@ export const getUrlQuery = (url:string = location.href) => {
   queryStr.split('&').forEach((item) => {
     const equalIndex = item.indexOf('=');
     if (equalIndex > -1) {
-      result[item.substring(0, equalIndex)] = item.substring(equalIndex + 1);
+      const value = item.substring(equalIndex + 1);
+      result[item.substring(0, equalIndex)] = decodeURIComponent(value);
     }
   });
   return result;

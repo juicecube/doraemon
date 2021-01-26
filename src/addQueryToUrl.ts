@@ -3,7 +3,8 @@ import * as _ from 'lodash';
 
 import { IObject } from './global';
 
-/** 向url字符串追加参数 */
+/** 向url字符串追加参数，
+ * 如果参数是一个url地址，那么需要先进行encodeURIComponent转义一下 */
 export function addQueryToUrl(query:IObject, url?:string):string {
   if (url) {
     if (!_.isString(url)) {
